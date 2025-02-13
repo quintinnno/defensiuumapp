@@ -3,8 +3,14 @@ ion-searchbar {
     --box-shadow: none;
     --background: #EEF0F2;
     --border-radius: 1.9rem;
-    --placeholder-font-weight: 600;
+    --placeholder-font-weight: 500;
     --placeholder-opacity: 0.5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .buttons ion-button {
@@ -15,4 +21,23 @@ ion-searchbar {
 
 .buttons ion-button ion-icon {
     color: #EEF0F2;
+}
+
+swiper-container {
+    // border: red solid 2px;
+    width: 100%;
+    margin-left: .6rem;
+}
+
+swiper-container swiper-slide {
+    background: #EEF0F2;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 1rem;
+    color: #526578;
+    font-size: .8rem;
+    font-weight: bold;
 }
