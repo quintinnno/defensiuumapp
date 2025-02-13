@@ -3,13 +3,17 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: '',
+    redirectTo: 'tabmenu',
+    pathMatch: 'full'
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'credencial',
+    loadChildren: () => import('./pages/credencial/credencial.module').then( m => m.CredencialPageModule)
+  },
+  {
+    path: 'tabmenu',
+    loadChildren: () => import('./components/tabmenu/tabmenu.module').then( m => m.TabmenuPageModule)
   },
 ];
 
